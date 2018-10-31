@@ -1,5 +1,5 @@
 <?php
-require_once 'core/TemplateEngine.php';
+require_once 'Core/TemplateEngine.php';
 
 use Core\TemplateEngine;
 

@@ -34,7 +34,7 @@ class TemplateEngine
   public function render($template_name)
   {
     // get data from template
-    $template = file_get_contents('template/'.$template_name.".te.php");
+    $template = file_get_contents('Templates/'.$template_name.".te.php");
 
     $template = preg_Replace('/\@if (.*)\:/','<?php if($1): ?>',$template);
     $template = preg_Replace('/\@else\:/','<?php else: ?>',$template);
